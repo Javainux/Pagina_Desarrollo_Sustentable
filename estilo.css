@@ -5,6 +5,10 @@
 }
 
 body{
+    background-image: url(https://i.pinimg.com/736x/b2/81/36/b28136b94acd4e8c5fa8be2210cb8943.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f0f5f0;
     color: #333;
