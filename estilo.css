@@ -89,7 +89,7 @@ article img, section .img-xalapa{
     height: auto;
     margin: 10px 0;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     transition: 0.3s ease-in-out;
 }
 
@@ -118,7 +118,7 @@ section .img-xalapa img{
 }
 
 .icono a:hover{
-    color: #ffd700;
+    color: black;
     transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
 }
