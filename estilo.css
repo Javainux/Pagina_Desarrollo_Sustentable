@@ -76,12 +76,15 @@ article{
     max-width: 900px;
     margin: 20px 0;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 article img{
     max-width: 100%;
     height: auto;
-    margin: 10px 0;
+    margin: 0;
 }
 
 article img, section .img-xalapa{
@@ -95,6 +98,32 @@ article img, section .img-xalapa{
 
 article img:hover, section .img-xalapa img:hover{
     transform: scale(1.05);
+}
+
+.SloganArticle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-container{
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-container img{
+    width: 640px;
+    height: 427px;
+}
+
+.PiePagina{
+    background-color:#e9f7e1;
+    padding: 10px;
+    border-radius: 8px;
+    font-family:serif;
+    font-size: large;
 }
 
 section{
