@@ -12,6 +12,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f0f5f0;
     color: #333;
+    text-align: justify;
 }
 
 header{
@@ -201,10 +202,6 @@ section .img-xalapa img{
     display:flex;
     align-items: center;
     gap: 10px;
-}
-
-.parrafo-Des{
-    text-align: justify;
 }
 
 .parrafo-icono{
