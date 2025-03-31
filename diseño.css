@@ -1,0 +1,192 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f5f0;
+    color: #333;
+}
+
+header{
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    font-size: 2.5em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2{
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#Navegacion{
+    background-color: #3a9d67;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#Navegacion ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-around;
+}
+
+#Navegacion li{
+    display: inline;
+    transition: transform 0.3s ease;
+}
+
+#Navegacion a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+#Navegacion a:hover{
+    color: #ffd700;
+    transform: scale(1.2);
+}
+
+#Navegacion li:hover{
+    transform: scale(1.2);
+}
+
+#Navegacion2{
+    margin:auto;
+    background-color: #3a9d67;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 8px;
+    margin-bottom: 20px; /*Para dejar espacio entre un objeto y otro*/
+}
+
+#Navegacion2 ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-around;
+}
+
+#Navegacion2 li{
+    display: inline;
+    transition: transform 0.3s ease;
+}
+
+#Navegacion2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+
+#Navegacion2 a:hover{
+    color: #ffd700;
+    transform: scale(1.2);
+}
+
+#Navegacion2 li:hover{
+    transform: scale(1.2);
+}
+
+.contenedor-imagen {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-imagen img {
+    width: 60%;
+    height: auto;
+    display: block;
+}
+
+.contenedor-imagen::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Capa negra con transparencia */
+    pointer-events: none;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    grid-template-rows: auto auto; /* Dos filas */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Para los artículos */
+.articulo_uno, .articulo_dos, .articulo_tres, .articulo_cuatro, .articulo_cinco {
+    display: flex;
+    flex-direction: column; /* Alineamos imagen y texto de forma vertical */
+    align-items: center; /* Centra los elementos en el contenedor */
+    width: 100%;
+
+    border: 1px solid #ccc; /* Borde del recuadro */
+    padding: 20px; /* Espacio interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo del recuadro */
+    transition: transform 0.3s ease; /* Efecto al pasar el ratón */
+}
+
+.articulo_uno:hover, .articulo_dos:hover, .articulo_tres:hover, .articulo_cuatro:hover, .articulo_cinco:hover {
+    transform: scale(1.05); /* Efecto al pasar el ratón sobre el artículo */
+}
+
+/* Para las imágenes */
+.articulo_uno img, .articulo_dos img, .articulo_tres img, .articulo_cuatro img, .articulo_cinco img {
+    width: 100%; /* Hace que las imágenes ocupen el 100% del contenedor */
+    max-width: 300px; /* Ajusta un tamaño máximo de 300px */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+.articulo_dos img{
+    max-width: 260px;
+}
+
+.articulo_cuatro img{
+    max-width: 265px;
+}
+
+/* Enlaces */
+.link_parque, .link_jardin, .link_naturalia, .link_cerro, .link_lagos {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: rgb(37, 37, 145);
+    margin-bottom: 10px;
+}
+
+/* Párrafos */
+.articulo_uno p, .articulo_dos p, .articulo_tres p, .articulo_cuatro p, .articulo_cinco p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.articulo_cinco{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
