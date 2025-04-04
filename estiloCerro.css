@@ -12,6 +12,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f0f5f0;
     color: #333;
+    text-align: justify;
 }
 
 header{
@@ -106,6 +107,34 @@ header h1{
     transform: scale(1.2);
 }
 
+.SloganArticle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-container{
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-container img{
+    width: 640px;
+    height: 427px;
+}
+
+.video{
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    transition: 0.3s ease-in-out;
+}
+
+.video:hover{
+    transform: scale(1.1);
+}
 
 
 main{
@@ -115,10 +144,16 @@ main{
     padding: 20px;
 }
 
-article{
+article {
     max-width: 900px;
     margin: 20px 0;
     text-align: center;
+}
+
+.mosaico{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 article img{
@@ -127,7 +162,25 @@ article img{
     margin: 10px 0;
 }
 
-article img, section .img-xalapa{
+
+
+article img, section .mosaico{
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    transition: 0.3s ease-in-out;
+}
+
+.img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.img-xalapa{
     max-width: 600px;
     height: 320px;
     margin: 10px 0;
@@ -136,16 +189,59 @@ article img, section .img-xalapa{
     transition: 0.3s ease-in-out;
 }
 
+#fullscreen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+    display: none;
+}
+
+#fullscreen img{
+    max-width: 90%;
+    max-width: 90%;
+}
+
 article img:hover, section .img-xalapa img:hover{
     transform: scale(1.05);
 }
 
-section{
+.SloganArticle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-container{
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-container img{
+    width: 640px;
+    height: 427px;
+}
+
+
+
+section {
     max-width: 900px;
     margin: 20px 0;
     padding: 20px;
     background-color: #e9f7e1;
     border-radius: 8px;
+}
+
+.visita{
+    margin: 20px 0;
+    background-color: #e9f7e1;
 }
 
 section h2{
@@ -160,17 +256,6 @@ section .img-xalapa img{
     border-radius: 8px;
 }
 
-.video{
-    margin: 30px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-    transition: 0.3s ease-in-out;
-}
-
-.video:hover{
-    transform: scale(1.1);
-}
-
 .icono a:hover{
     color: black;
     transform: scale(1.2);
@@ -180,10 +265,7 @@ section .img-xalapa img{
     display:flex;
     align-items: center;
     gap: 10px;
-}
-
-.parrafo-Des{
-    text-align: justify;
+    
 }
 
 .parrafo-icono{
