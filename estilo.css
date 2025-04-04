@@ -12,6 +12,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f0f5f0;
     color: #333;
+    text-align: justify;
 }
 
 header{
@@ -76,15 +77,18 @@ article{
     max-width: 900px;
     margin: 20px 0;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 article img{
     max-width: 100%;
     height: auto;
-    margin: 10px 0;
+    margin: 0;
 }
 
-article img, section .img-xalapa{
+article img, section .mosaico{
     max-width: 100%;
     height: auto;
     margin: 10px 0;
@@ -93,8 +97,43 @@ article img, section .img-xalapa{
     transition: 0.3s ease-in-out;
 }
 
+.img-xalapa{
+    max-width: 620px;
+    height: 240px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    transition: 0.3s ease-in-out;
+}
+
 article img:hover, section .img-xalapa img:hover{
     transform: scale(1.05);
+}
+
+.SloganArticle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-container{
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-container img{
+    width: 640px;
+    height: 427px;
+}
+
+.PiePagina{
+    background-color:#e9f7e1;
+    padding: 10px;
+    border-radius: 8px;
+    font-family:serif;
+    font-size: large;
 }
 
 section{
