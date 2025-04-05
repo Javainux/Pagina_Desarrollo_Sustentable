@@ -1,26 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f0f5f0;
     color: #333;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/736x/b2/81/36/b28136b94acd4e8c5fa8be2210cb8943.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header{
     background-color: #2e7d32;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 header h1{
     font-size: 2.5em;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
 }
 
 h2{
     background-color: #2e7d32;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    margin: 8px;
 }
 
 #Navegacion{
@@ -99,29 +115,47 @@ h2{
 }
 
 .contenedor-imagen {
-    position: relative;
-    width: 100%;
+    width: 60%;
+    margin: 20px auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
+.contenedor-img{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
 .contenedor-imagen img {
-    width: 60%;
+    width: 100%;
     height: auto;
     display: block;
+    border-radius: 8px;
 }
 
-.contenedor-imagen::after {
+.PiePagina{
+    background-color:#e9f7e1;
+    padding: 10px;
+    border-radius: 8px;
+    font-family:serif;
+    font-size: large;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contenedor-img::after {
     content: "";
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
+    left: 0;
+    width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Capa negra con transparencia */
-    pointer-events: none;
+    pointer-events: 45px;
+    border-radius: 8px;
 }
 
 .contenedor {
@@ -136,14 +170,15 @@ h2{
     display: flex;
     flex-direction: column; /* Alineamos imagen y texto de forma vertical */
     align-items: center; /* Centra los elementos en el contenedor */
-    width: 100%;
+    width: 550px;
 
     border: 1px solid #ccc; /* Borde del recuadro */
     padding: 20px; /* Espacio interno */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
     border-radius: 10px; /* Bordes redondeados */
-    background-color: #f9f9f9; /* Fondo del recuadro */
+    background-color: #b0caa9; /* Fondo del recuadro */
     transition: transform 0.3s ease; /* Efecto al pasar el ratón */
+    margin: 20px auto;
 }
 
 .articulo_uno:hover, .articulo_dos:hover, .articulo_tres:hover, .articulo_cuatro:hover, .articulo_cinco:hover {
@@ -189,4 +224,16 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+footer{
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p{
+    font-size: 1em;
 }
