@@ -175,6 +175,10 @@ section .img-xalapa img{
     margin: 0;
 }
 
+.enlace-blogs{
+    text-decoration: none;
+}
+
 footer{
     background-color: #2e8b57;
     color: white;
