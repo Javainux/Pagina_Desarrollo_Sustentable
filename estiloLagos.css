@@ -1,242 +1,282 @@
-*{
+:root {
+    --primary-color: #2e7d32;
+    --secondary-color: #81c784;
+    --accent-color: #ffab00;
+    --dark-color: #1b5e20;
+    --light-color: #e8f5e9;
+    --text-color: #333;
+    --text-light: #f5f5f5;
+    --dark-color2: #1f7724a1;
+    --secondary-color2: #81c784ae;
+    --light-color2: #e8f5e9cd;
+}
+
+body {
     margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-color);
+}
+
+/* NAV PRINCIPAL Y SECUNDARIA */
+nav {
+    width: 100%;
+    background-color: rgba(27, 94, 32, 0.9);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    z-index: 1000;
+}
+
+#Navegacion {
+    position: fixed;
+    top: 0;
+}
+
+#Navegacion2 {
+    position: sticky;
+    top: 60px;
+    margin-top: 70px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-body{
-    background-image: url(https://i.pinimg.com/736x/b2/81/36/b28136b94acd4e8c5fa8be2210cb8943.jpg);
-    background-size:cover;
-    background-position: center center;
-    background-attachment: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f0f5f0;
-    color: #333;
-    text-align: justify;
+nav li {
+    margin: 0 1rem;
 }
 
-header{
-    background-color: #2e7d32;
+nav a {
     color: white;
-    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* HEADER */
+header {
     text-align: center;
-    margin-bottom: 10px;
-}
-
-header h1{
-    font-size: 2.5em;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#Navegacion{
-    background-color: #3a9d67;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-#Navegacion ul{
-    list-style-type: none;
-    display: flex;
-    justify-content:space-around;
-}
-
-#Navegacion li{
-    display: inline;
-    transition: transform 0.3s ease;
-}
-
-
-#Navegacion a{
-    text-decoration: none;
     color: white;
-    font-size: 1.1em;
-    font-weight: bold;
-    transition: transform 0.3s ease;
+    padding: 150px 20px 60px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
 }
 
-
-
-#Navegacion a:hover{
-    color: #ffd700;
-    transform: scale(1.2);
+header h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-#Navegacion li:hover{
-    transform: scale(1.2);
+/* SLOGAN Y TÍTULO */
+
+.SloganArticle {
+    background-color: var(--dark-color2);
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    max-width: 1000px;
 }
 
-/*Aqui va la navegacion 2 */
-#Navegacion2{
-    margin:auto;
-    background-color: #3a9d67;
-    padding: 10px;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 8px;
+.SloganArticle h2{
+    color: var(--text-color);
+    color: var(--light-color);
+    border-radius: 7px;
 }
 
-#Navegacion2 ul{
-    list-style-type: none;
-    display: flex;
-    justify-content:space-around;
-}
-
-#Navegacion2 li{
-    display: inline;
-    transition: transform 0.3s ease;
-}
-
-
-#Navegacion2 a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.1em;
-    font-weight: bold;
-    transition: transform 0.3s ease;
-}
-
-
-
-#Navegacion2 a:hover{
-    color: #ffd700;
-    transform: scale(1.2);
-}
-
-#Navegacion2 li:hover{
-    transform: scale(1.2);
-}
-
-
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-article{
-    max-width: 900px;
-    margin: 20px 0;
+.SloganArticle p{
+    color: var(--light-color);
+    border-radius: 9px;
     text-align: center;
 }
 
-article img{
-    max-width: 100%;
-    height: auto;
-    margin: 10px 0;
+.Slogan {
+    color: var(--primary-color);
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
 }
 
 
 
-article img, section .img-xalapa{
-    max-width: 600px;
-    height: 320px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-    transition: 0.3s ease-in-out;
+.TituloLosLagos {
+    color: var(--primary-color);
+    background-color: var(--light-color2);
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
 }
 
-#fullscreen{
+#fullscreen {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgb(0, 0, 0, 0.8);
-    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
     justify-content: center;
-    z-index: 9999;
-    display: none;
-}
-
-#fullscreen img{
-    max-width: 90%;
-    max-width: 90%;
-}
-
-article img:hover, section .img-xalapa img:hover{
-    transform: scale(1.05);
-}
-
-section{
-    max-width: 900px;
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #e9f7e1;
-    border-radius: 8px;
-}
-
-section h2{
-    text-align: center;
-    font-size: 2em;
-    color: #2e8b57;
-}
-
-section .img-xalapa img{
-    width: 600px;
-    height: 320px;
-    border-radius: 8px;
-}
-
-.TituloLosLagos{
-    background-color: #2e7d32;
-    color: white;
-    padding: 5px;
-    text-align: center;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 10px;
-    border-radius: 9px;
-}
-
-.imgLagos{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-
-.video{
-    margin: 30px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-    transition: 0.3s ease-in-out;
-}
-
-.video:hover{
-    transform: scale(1.1);
-}
-
-.icono a:hover{
-    color: black;
-    transform: scale(1.2);
-    transition: transform 0.3s ease-in-out;
-}
-.icono {
-    display:flex;
     align-items: center;
-    gap: 10px;
+    z-index: 9999;
 }
 
-.parrafo-icono{
-    margin: 0;
+#fullscreen img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
 }
 
-.enlace-blogs{
+/* IMÁGENES DE LAGOS */
+.imgLagos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.imgLagos img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.imgLagos img:hover {
+    transform: scale(1.03);
+}
+
+/* VIDEO */
+.video {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* DESCRIPCIÓN */
+.Descripcion-Xalapa {
+    background-color: var(--dark-color2);
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    max-width: 1000px;
+}
+
+.Descripcion-Xalapa h2 {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.Parrafo-Des {
+    background-color: var(--light-color);
+    padding: 1rem;
+    border-radius: 10px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* SECCIÓN DE IMAGEN DESTACADA */
+.img-xalapa {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.img-xalapa img {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+/* SECCIONES EN GENERAL */
+section {
+    margin: 2rem auto;
+    max-width: 1000px;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+section h2 {
+    color: var(--dark-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.icono {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.icono a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 30px;
+    transition: background-color 0.3s;
     text-decoration: none;
 }
 
-footer{
-    background-color: #2e8b57;
-    color: white;
-    padding: 10px;
-    text-align: center;
+.icono a:hover {
+    background-color: var(--accent-color);
 }
 
-footer p{
-    font-size: 1em;
+/* PIE DE PÁGINA */
+.PiePagina, footer {
+    background-color: var(--light-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer {
+    margin-top: 3rem;
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.iconos-redes a svg {
+    stroke: white;
+    fill: none;
+    transition: stroke 0.3s, fill 0.3s;
+}
+
+.iconos-redes a:hover svg {
+    stroke: black;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0.5rem 0;
+    }
+
+    .imgLagos {
+        grid-template-columns: 1fr;
+    }
 }
