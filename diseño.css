@@ -1,239 +1,192 @@
-*{
+:root {
+    --primary-color: #2e7d32;
+    --secondary-color: #81c784;
+    --accent-color: #ffab00;
+    --dark-color: #1b5e1f;
+    --light-color: #e8f5e9;
+    --text-color: #333;
+    --text-light: #f5f5f5;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f0f5f0;
-    color: #333;
-    text-align: center;
-    background-image: url(https://i.pinimg.com/736x/b2/81/36/b28136b94acd4e8c5fa8be2210cb8943.jpg);
-    background-attachment: fixed;
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header{
-    background-color: #2e7d32;
-    color: white;
+    color: var(--text-color);
     text-align: center;
-    padding: 10px;
 }
 
-header h1{
-    font-size: 2.5em;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 5px;
-}
-
-h2{
-    background-color: #2e7d32;
-    color: white;
+header {
     text-align: center;
-    padding: 15px;
-    margin: 8px;
+    color: white;
+    padding: 70px 20px 70px;
+    background: rgba(0, 0, 0, 0.5);
+    
 }
 
-#Navegacion{
-    background-color: #3a9d67;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+header h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-#Navegacion ul{
-    list-style-type: none;
+/* NAV PRINCIPAL */
+#Navegacion, #Navegacion2 {
+    position: static;
+    width: 100%;
+    background-color: rgba(27, 94, 32, 0.9);
     display: flex;
-    justify-content:space-around;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 1000;
 }
 
-#Navegacion li{
+#Navegacion ul, #Navegacion2 ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#Navegacion li, #Navegacion2 li {
     display: inline;
-    transition: transform 0.3s ease;
 }
 
-#Navegacion a{
-    text-decoration: none;
+#Navegacion a, #Navegacion2 a {
     color: white;
-    font-size: 1.1em;
-    font-weight: bold;
-    transition: transform 0.3s ease;
-}
-
-#Navegacion a:hover{
-    color: #ffd700;
-    transform: scale(1.2);
-}
-
-#Navegacion li:hover{
-    transform: scale(1.2);
-}
-
-#Navegacion2{
-    margin:auto;
-    background-color: #3a9d67;
-    padding: 10px;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 8px;
-    margin-bottom: 20px; /*Para dejar espacio entre un objeto y otro*/
-}
-
-#Navegacion2 ul{
-    list-style-type: none;
-    display: flex;
-    justify-content:space-around;
-}
-
-#Navegacion2 li{
-    display: inline;
-    transition: transform 0.3s ease;
-}
-
-#Navegacion2 a{
     text-decoration: none;
-    color: white;
-    font-size: 1.1em;
     font-weight: bold;
-    transition: transform 0.3s ease;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+#Navegacion a:hover, #Navegacion2 a:hover {
+    color: var(--accent-color);
+}
+
+/* Imagen central */
+.contenedor-imagen h2 {
+    color: var(--dark-color);
+}
+
+.contenedor-imagen p{
+    padding: 0.8rem;
 }
 
 
-#Navegacion2 a:hover{
-    color: #ffd700;
-    transform: scale(1.2);
-}
-
-#Navegacion2 li:hover{
-    transform: scale(1.2);
-}
-
-.contenedor-imagen {
-    width: 60%;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contenedor-img{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 8px;
-}
-.contenedor-imagen img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-}
-
-.PiePagina{
-    background-color:#e9f7e1;
+.PiePagina {
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 10px;
-    border-radius: 8px;
-    font-family:serif;
-    font-size: large;
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    font-weight: bold;
 }
 
-.contenedor-img::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Capa negra con transparencia */
-    pointer-events: 45px;
-    border-radius: 8px;
-}
-
+/* Grid de artículos */
 .contenedor {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
-    grid-template-rows: auto auto; /* Dos filas */
-    gap: 20px; /* Espacio entre los elementos */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
 }
 
-/* Para los artículos */
+/* Artículos */
 .articulo_uno, .articulo_dos, .articulo_tres, .articulo_cuatro, .articulo_cinco {
-    display: flex;
-    flex-direction: column; /* Alineamos imagen y texto de forma vertical */
-    align-items: center; /* Centra los elementos en el contenedor */
-    width: 550px;
-
-    border: 1px solid #ccc; /* Borde del recuadro */
-    padding: 20px; /* Espacio interno */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    border-radius: 10px; /* Bordes redondeados */
-    background-color: #b0caa9; /* Fondo del recuadro */
-    transition: transform 0.3s ease; /* Efecto al pasar el ratón */
-    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.3s;
 }
 
 .articulo_uno:hover, .articulo_dos:hover, .articulo_tres:hover, .articulo_cuatro:hover, .articulo_cinco:hover {
-    transform: scale(1.05); /* Efecto al pasar el ratón sobre el artículo */
+    transform: translateY(-5px);
 }
 
-/* Para las imágenes */
 .articulo_uno img, .articulo_dos img, .articulo_tres img, .articulo_cuatro img, .articulo_cinco img {
-    width: 100%; /* Hace que las imágenes ocupen el 100% del contenedor */
-    max-width: 300px; /* Ajusta un tamaño máximo de 300px */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block;
-    margin-bottom: 15px; /* Espacio debajo de la imagen */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
-.articulo_dos img{
-    max-width: 260px;
+.articulo_uno h3, .articulo_dos h3, .articulo_tres h3, .articulo_cuatro h3, .articulo_cinco h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    padding: 1rem; 
 }
 
-.articulo_cuatro img{
-    max-width: 265px;
+.articulo_uno p, .articulo_dos p, .articulo_tres p, .articulo_cuatro p, .articulo_cinco p {
+    color: #555;
+    font-size: 0.95rem;
 }
 
 /* Enlaces */
 .link_parque, .link_jardin, .link_naturalia, .link_cerro, .link_lagos {
     text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    color: rgb(37, 37, 145);
-    margin-bottom: 10px;
 }
 
-/* Párrafos */
-.articulo_uno p, .articulo_dos p, .articulo_tres p, .articulo_cuatro p, .articulo_cinco p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-}
-
-.articulo_cinco{
-    grid-column: span 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-footer{
-    background-color: #2e8b57;
+/* Footer */
+footer {
+    background-color: var(--dark-color);
     color: white;
-    padding: 10px;
-    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    
 }
 
-footer p{
-    font-size: 1em;
+footer p {
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+footer .social-icons a{
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+    padding: 0.3rem;
+}
+
+.social-icons a svg{
+    stroke: white;
+    fill: none;
+    transition: stroke 0.3s ease;
+}
+
+.social-icons a:hover svg{
+    stroke: black;
+}
+
+footer .social-icons a:hover{
+    color: var(--dark-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #Navegacion ul, #Navegacion2 ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contenedor {
+        padding: 1rem;
+    }
+
+    .contenedor-imagen {
+        width: 90%;
+    }
 }
