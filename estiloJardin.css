@@ -252,6 +252,13 @@ section h2 {
     background-color: var(--accent-color);
 }
 
+.enlace-blogs{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+
 /* PIE DE PÁGINA */
 .PiePagina, footer {
     background-color: var(--light-color);
