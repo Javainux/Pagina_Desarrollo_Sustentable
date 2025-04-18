@@ -85,7 +85,7 @@ header h1 {
 }
 
 /* Contenedor general */
-.berro {
+.berro, .haya, .tecajetes, .ayuda{
     max-width: 1200px;
     margin: 2rem auto;
     padding: 1rem;
@@ -93,7 +93,7 @@ header h1 {
     border-radius: 10px;
 }
 
-.berro h2{
+.berro h2, .haya h2, .tecajetes h2{
     padding: 1%;
     color:#2e7d32;
 }
@@ -114,6 +114,11 @@ header h1 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.ultima_foto{
+    width: 60%;
+    height: 480px;
+}
+
 /* Videos */
 .video {
     width: 55%;         /* El video se adapta al 100% del contenedor */
@@ -123,46 +128,6 @@ header h1 {
     border-radius: 2.5%;
 }
 
-.galeria_dos{
-    display: grid;
-}
-
-
-.haya {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 10px;
-}
-
-.haya h2{
-    color: #2e7d32;
-    padding: 1%;
-}
-
-.galeria_dos{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin: 1rem 0;
-}
-
-.galeria_dos img{
-    width: 95%;
-    height: 380px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.video {
-    width: 55%;
-    height: 30%;
-    aspect-ratio: 16/9;
-    margin: 0 auto;
-    border-radius: 2.5%;
-}
 
 /* Icono y texto */
 .icono {
