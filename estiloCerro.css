@@ -241,7 +241,7 @@ section h2 {
     display: inline-block;
     background-color: var(--primary-color);
     color: white;
-    padding: 0.8rem 1rem;
+    padding: 0.4rem 0.5rem;
     border-radius: 30px;
     transition: background-color 0.3s;
     text-decoration: none;
@@ -249,6 +249,10 @@ section h2 {
 
 .icono a:hover {
     background-color: var(--accent-color);
+}
+
+.ayuda {
+    text-align: center;
 }
 
 .enlace-blogs{
@@ -274,6 +278,7 @@ footer {
 }
 
 .iconos-redes a svg {
+    padding: 0 3px;
     stroke: white;
     fill: none;
     transition: stroke 0.3s, fill 0.3s;
