@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desarrollo Sustentable en Ingeniería en Sistemas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --verde-oscuro: #1b5e20;
+      --verde-profundo: #2e7d32;
+      --verde-selva: #388e3c;
+      --verde-suave: #81c784;
+      --tierra: #6d4c41;
+      --agua: #4fc3f7;
+      --fondo-blanco-transparente: rgba(255, 255, 255, 0.6);
+      --accent-color: #ffab00;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') no-repeat center center fixed;
+      background-size: cover;
+      color: #000;
+    }
+
+
+    header {
+      background-color: var(--verde-oscuro);
+      padding: 20px 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 100, 0, 0.4);
+    
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 2em;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    /* NAV PRINCIPAL Y SECUNDARIA */
+nav {
+    width: 100%;
+    background-color: rgba(27, 94, 32, 0.9);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    z-index: 1000;
+}
+
+#Navegacion {
+  margin-top: 20px;
+    position: fixed;
+    top: 0;
+    position:sticky;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+    .content {
+      background-color: var(--fondo-blanco-transparente);
+      color: #000;
+      margin: 30px auto;
+      padding: 30px;
+      width: 90%;
+      max-width: 1000px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 100, 0, 0.3);
+      backdrop-filter: blur(3px);
+      text-align: justify;
+    }
+
+    h3 {
+      color: var(--verde-profundo);
+      margin-top: 30px;
+      position: relative;
+      font-size: 1.5em;
+    }
+
+    h3 i {
+      margin-right: 8px;
+      color: var(--verde-suave);
+      animation: bounce 1.5s infinite alternate;
+    }
+
+    @keyframes bounce {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-5px);
+      }
+    }
+
+    p, li {
+      line-height: 1.7;
+      font-size: 1.05em;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .No-arrojar-basura {
+      background-color: var(--fondo-blanco-transparente);
+      border-left: 5px solid var(--verde-selva);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0, 100, 0, 0.2);
+      color: #000;
+    }
+
+    .No-arrojar-basura img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .highlight {
+      background-color: var(--fondo-blanco-transparente);
+      padding: 15px;
+      border-left: 4px solid var(--tierra);
+      margin: 15px 0;
+      border-radius: 8px;
+      color: #000;
+    }
+
+    .footer {
+      background-color: var(--verde-oscuro);
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      box-shadow: 0 -2px 10px rgba(0, 100, 0, 0.4);
+    }
+
+    .iconos-redes a svg {
+      padding: 0 3px;
+      stroke: white;
+      fill: none;
+      transition: stroke 0.3s, fill 0.3s;
+    }
+
+    .iconos-redes a:hover svg {
+    stroke: black;
+    } 
+
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+
+    [data-animate].visible {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+</head>
+<body>
+
+</body>
+</html>
+
+<header>
+  <h1>Sobre nosotros</h1>
+</header>
+
+<nav id="Navegacion">
+  <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Blogs.html">Blog</a></li>
+      <li><a href="#">¿Cómo cuidar las áreas verdes?</a></li>
+  </ul>
+</nav>
+
+<div class="content" data-animate>
+  <div class="No-arrojar-basura">
+    <img src="imagenes/parque-el-haya.jpg" alt="">
+    <h3><i class="fas fa-leaf"></i>El desarrollo sustentable en el ámbito de la ingeniería en sistemas</h3>
+    <p>El desarrollo sustentable en la ingeniería en sistemas se refiere a la aplicación de principios de sostenibilidad en
+        el diseño, desarrollo y mantenimiento de software y hardware. Su objetivo es reducir el impacto ambiental, optimizar
+        el uso de recursos y promover la eficiencia energética. Algunos aspectos clave incluyen:</p>
+
+    <h3 id="eficiencia"><i class="fas fa-bolt"></i>Eficiencia Energética</h3>
+    <p><p>La eficiencia energética en el desarrollo de software implica optimizar el consumo de energía de los sistemas computacionales.</p>
+    <ul>
+        <li>Optimización de algoritmos: Un código eficiente reduce la carga de trabajo del procesador, disminuyendo el consumo energético.</li>
+        <li>Optimización de algoritmos: Un código eficiente reduce la carga de trabajo del procesador, disminuyendo el consumo energético. Algoritmos optimizados requieren menos operaciones y menor uso de memoria.</li>
+        <li>Uso de estructuras de datos eficientes: Elegir estructuras de datos adecuadas mejora el rendimiento y reduce el tiempo de procesamiento.</li>
+        <li>Optimización del uso de hardware: Minimizar procesos innecesarios en servidores y dispositivos móviles para reducir el uso de CPU y memoria.</li>
+        <li>Computación en paralelo y distribuida: Mejor distribución de carga para evitar el sobrecalentamiento y el consumo excesivo de energía.</li>
+        <li>Uso de arquitecturas eficientes: Emplear hardware con bajo consumo energético y software que maximice su eficiencia.</li>
+    </ul></p>
+    <ul>
+      <li>Optimización de algoritmos...</li>
+      
+      <!-- Puedes continuar con el resto igual -->
+    </ul>
+
+    <h3 id="recursos"><i class="fas fa-recycle"></i>Uso Responsable de Recursos</h3>
+    <ul>
+        <li>El uso responsable de los recursos tecnológicos se centra en la reducción de desechos electrónicos y en la reutilización de materiales.</li>
+            <li>Reciclaje y reutilización de hardware: Fomentar el reciclaje de componentes electrónicos y reutilizar dispositivos en lugar de desecharlos prematuramente.</li>
+            <li>Uso de servidores eficientes: Implementar centros de datos con tecnología que optimice el consumo energético y reduzca la generación de calor.</li>
+            <li>Minimización de la obsolescencia programada: Desarrollar software compatible con versiones antiguas de hardware para prolongar la vida útil de los dispositivos.</li>
+            <li>Desarrollo de software con impacto reducido: Aplicaciones optimizadas para correr en dispositivos de bajos recursos, reduciendo la necesidad de hardware nuevo.</li>
+        </ul>
+    </ul>
+
+    <h3 id="nube"><i class="fas fa-cloud"></i>Computación en la nube</h3>
+    <p>El uso de la nube permite optimizar el consumo de recursos y reducir el impacto ambiental:</p>
+        <ul>
+            <li>Reducción del uso de hardware local: La computación en la nube elimina la necesidad de servidores locales, lo que reduce el consumo energético en oficinas y empresas.</li>
+            <li>Uso eficiente de servidores: Los centros de datos en la nube utilizan técnicas de optimización para mejorar la eficiencia energética y reducir la huella de carbono.</li>
+            <li>Balanceo de carga y escalabilidad: La nube ajusta dinámicamente el uso de recursos según la demanda, evitando el desperdicio de energía.</li>
+            <li>Servicios compartidos: La virtualización permite ejecutar múltiples aplicaciones en un solo servidor, reduciendo la cantidad de hardware necesario.</li>
+        </ul>
+
+    <h3 id="verde"><i class="fas fa-code"></i>Software verde</h3>
+    <p>El desarrollo sustentable también implica considerar el impacto del software a lo largo de su ciclo de vida. Esto se logra mediante:</p>
+    <ul>
+        <li>Desarrollo ágil y sostenible: Metodologías como Agile y DevOps ayudan a reducir desperdicios y mejorar la eficiencia en el desarrollo.</li>
+        <li>Mantenimiento y actualización en lugar de reemplazo: Fomentar la actualización de software en lugar de la obsolescencia programada.</li>
+        <li>Minimización del impacto en la fase de desarrollo: Evitar compilaciones innecesarias, optimizar procesos de prueba y automatizar tareas para reducir el consumo energético.</li>
+        <li>Gestión eficiente de código: Uso de control de versiones y buenas prácticas de programación para evitar redundancias y mejorar la mantenibilidad.</li>
+        <li>Documentación y pruebas automatizadas: Un software bien documentado y probado facilita su actualización y mantenimiento, reduciendo la necesidad de desarrollar nuevas versiones desde cero.</li>
+    </ul>
+
+    <h3 id="ciclo"><i class="fas fa-sync-alt"></i>Ciclo de vida del software</h3>
+    <p>El desarrollo sustentable también implica considerar el impacto del software a lo largo de su ciclo de vida. Esto se logra mediante:</p>
+    <ul>
+        <li>Desarrollo ágil y sostenible: Metodologías como Agile y DevOps ayudan a reducir desperdicios y mejorar la eficiencia en el desarrollo.</li>
+        <li>Mantenimiento y actualización en lugar de reemplazo: Fomentar la actualización de software en lugar de la obsolescencia programada.</li>
+        <li>Minimización del impacto en la fase de desarrollo: Evitar compilaciones innecesarias, optimizar procesos de prueba y automatizar tareas para reducir el consumo energético.</li>
+        <li>Gestión eficiente de código: Uso de control de versiones y buenas prácticas de programación para evitar redundancias y mejorar la mantenibilidad.</li>
+        <li>Documentación y pruebas automatizadas: Un software bien documentado y probado facilita su actualización y mantenimiento, reduciendo la necesidad de desarrollar nuevas versiones desde cero.</li>
+    </ul>
+
+    <h3 id="etica"><i class="fas fa-hand-holding-heart"></i>Ética y responsabilidad social</h3>
+    <p>La ingeniería en sistemas también tiene un impacto social y ético en la sostenibilidad. Algunos aspectos importantes son:</p>
+        <ul>
+            <li>Privacidad y seguridad de datos: Uso responsable de la información para evitar abusos y garantizar la privacidad.</li>
+            <li>Transparencia en el desarrollo de software: Fomentar el código abierto y el acceso a software sostenible para evitar monopolios tecnológicos que generen desperdicio de recursos.</li>
+            <li>Inclusión digital: Desarrollo de software accesible para comunidades con menos acceso a tecnología, optimizando su uso en dispositivos de bajo costo.</li>
+            <li>Conciencia sobre el impacto ambiental: Formación en desarrollo sostenible para programadores y empresas de tecnología.</li>
+            <li>Reducción de la brecha tecnológica: Diseñar software que pueda ejecutarse en hardware antiguo para evitar la rápida obsolescencia de dispositivos.</li>
+        </ul>
+
+  <h3><i class="fas fa-question-circle"></i>¿Cuál fue la finalidad de hacer esta página WEB?</h3>
+  <p>
+    La finalidad de esta página Web es hacer conciencia sobre el medio ambiente, conocer los parques y viveros de la capital de Veracruz "Xalapa", lo que verán a lo largo de esta página serán los parques más emblemáticos y hermosos que tiene la ciudad, así como sus paisajes y la descripción de cada uno.
+</p>
+  <h3><i class="fas fa-book"></i>La materia responsable para hacer esta página</h3>
+  <p>
+    La finalidad de esta página Web fue gracias a la materia de Desarrollo Sustentable, que se enfoca en cómo las sociedades pueden satisfacer sus necesidades sin comprometer el bienestar de las futuras generaciones.
+</p>
+
+  <h3><i class="fas fa-users"></i>Integrantes y su contribución</h3>
+  <ul>
+    <li>Julia Lizbeth Pérez Santiago (Programador)</li>
+    <li>Jareth Ignacio Murillo Pavón (Programador)</li>
+    <li>Jorge Alberto Gandara Munguía (Programador)</li>
+    <li>Erick Zárate Mejía (Investigadores)</li>
+    <li>Ossiel Osais Ruiz (Investigadores)</li>
+    <li>Brenda Paola Sanchez Ramirez (Investigadores)</li>
+    <li>Ian Habid Aldama Martinez (Investigadores)</li>
+    <li>Abimael Acosta Moreno (Investigadores)</li>
+    <li>Alin Michelle Lopez Flores (Investigadores)</li>
+</ul>
+</div>
+
+<div class="footer">
+  <p>Contáctanos en nuestras redes sociales:  </p>
+            <div class="iconos-redes">
+                <a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg></a>
+                <a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="#ffffff"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-8a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-4 5a4 4 0 0 0 -3.995 3.8l-.005 .2a4 4 0 1 0 4 -4m4.5 -1.5a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" /></svg></a>
+                <a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg></a>
+            </div>
+  <p>© 2025 Xalapa Verde - Todos los derechos reservados</p>
+</div>
+
+<script>
+  const animElements = document.querySelectorAll("[data-animate]");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  });
+
+  animElements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
+
