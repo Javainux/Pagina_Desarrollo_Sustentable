@@ -31,6 +31,15 @@
       color: #000;
     }
 
+    body {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  body.fade-out {
+    opacity: 0;
+  }
+
 
     header {
       background-color: var(--verde-oscuro);
@@ -330,6 +339,8 @@ nav a:hover {
 
   animElements.forEach(el => observer.observe(el));
 </script>
+
+<script src="transicion.js"></script>
 
 </body>
 </html>

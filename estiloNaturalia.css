@@ -16,7 +16,28 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') no-repeat center center fixed;
     background-size: cover;
-    color: var(--text-color);
+    color:
+     var(--text-color);
+}
+
+body {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  body.fade-out {
+    opacity: 0;
+  }
+
+#Navegacion {
+    position: fixed;
+    top: 0;
+}
+
+#Navegacion2 {
+    position: sticky;
+    top: 60px;
+    margin-top: 70px;
 }
 
 /* NAV PRINCIPAL Y SECUNDARIA */

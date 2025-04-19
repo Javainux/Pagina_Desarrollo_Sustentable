@@ -18,6 +18,15 @@ body {
     color: var(--text-color);
 }
 
+body {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  body.fade-out {
+    opacity: 0;
+  }
+
 nav {
     position: fixed;
     top: 0;

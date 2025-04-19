@@ -19,6 +19,26 @@ body {
     color: var(--text-color);
 }
 
+body {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  body.fade-out {
+    opacity: 0;
+  }
+
+#Navegacion {
+    position: fixed;
+    top: 0;
+}
+
+#Navegacion2 {
+    position: sticky;
+    top: 60px;
+    margin-top: 70px;
+}
+
 /* NAV PRINCIPAL Y SECUNDARIA */
 nav {
     width: 100%;
