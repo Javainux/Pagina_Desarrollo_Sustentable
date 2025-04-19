@@ -71,12 +71,18 @@ header h1 {
 }
 
 /* Imagen central */
-.contenedor-imagen h2 {
-    color: var(--dark-color);
+.contenedor-imagen {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 1rem auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
 }
 
-.contenedor-imagen p{
-    padding: 0.8rem;
+.contenedor-imagen h2{
+    color: #2e7d32;
+    padding: 1%;
 }
 
 
@@ -134,6 +140,20 @@ header h1 {
 /* Enlaces */
 .link_parque, .link_jardin, .link_naturalia, .link_cerro, .link_lagos {
     text-decoration: none;
+}
+
+.ayuda{
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+}
+
+.ayuda a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 /* Footer */
