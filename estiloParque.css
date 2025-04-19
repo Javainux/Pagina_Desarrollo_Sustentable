@@ -94,7 +94,7 @@ header h1 {
 }
 
 .berro h2, .haya h2, .tecajetes h2{
-    padding: 1%;
+    padding: 2.5%;
     color:#2e7d32;
 }
 
@@ -106,17 +106,33 @@ header h1 {
     margin: 1rem 0;
 }
 
-.galeria img {
+.galeria img, .ultima_foto img {
     width: 95%;
     height: 380px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
+
+
+.ultima_foto:hover {
+    transform: scale(1.05);
 }
 
 .ultima_foto{
     width: 60%;
     height: 480px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 3%;
 }
 
 /* Videos */
@@ -141,6 +157,16 @@ header h1 {
 .parrafo-icono {
     font-weight: bold;
     color: black;
+}
+
+.icono a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 0.60rem;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    text-decoration: none;
 }
 
 /* Párrafos individuales */
