@@ -183,6 +183,18 @@ header h1 {
     border-radius: 2.5%;
 }
 
+.Parrafo-uno{
+    text-align:justify ;
+}
+
+.Parrafo-dos{
+    text-align:justify ;
+}
+
+.Parrafo-tres{
+    text-align:justify ;
+}
+
 
 /* Icono y texto */
 .icono {
