@@ -270,7 +270,7 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -284,9 +284,15 @@ footer {
 }
 
 @media (max-width: 600px) {
-    
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        flex-wrap: nowrap; /* Evita que los elementos se rompan */
+        overflow-x: auto; /* Permite desplazamiento si hay demasiados elementos */
+        justify-content: start; /* Alinea los elementos al inicio */
+    }
+  
+    nav li {
+        flex: 0 0 auto; /* Evita que los elementos se reduzcan demasiado */
+        margin: 0 0.5rem;
     }
 }

@@ -323,9 +323,38 @@ footer {
 }
 
 @media (max-width: 600px) {
-    
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+    nav {
+        display: flex;
+        overflow-x: auto; /* Permite desplazamiento si hay muchos elementos */
+        white-space: nowrap; /* Evita que los elementos se acomoden en varias líneas */
+        padding: 0.5rem 0;
+        justify-content: start;
     }
+
+    nav ul {
+        display: flex;
+        flex-direction: row; /* Mantiene la estructura horizontal */
+        gap: 1rem; /* Espaciado entre elementos */
+        flex-wrap: nowrap; /* Evita que los elementos se apilen */
+        width: max-content; /* Se ajusta al contenido para mantenerlo en línea */
+    }
+
+    nav li {
+        flex: 0 0 auto;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .video {
+        display: block;
+        margin: 2rem auto;
+        max-width: 80%;
+        border-radius: 10px;
+    }
+
+
 }
