@@ -27,16 +27,6 @@
             color: var(--text-color);
         }
 
-        body {
-            opacity: 1;
-            transition: opacity 0.2s ease-in-out;
-        }
-        
-        body.fade-out {
-            opacity: 0;
-        }
-
-
         nav {
             position: fixed;
             top: 0;
@@ -103,6 +93,10 @@
             text-align: justify;
         }
 
+        .Parque{
+            text-align: justify;
+        }
+
         .Parque {
             margin-bottom: 2rem;
             background-color: white;
@@ -164,15 +158,29 @@
             margin-top: 3rem;
         }
 
-        footer .social-icons a {
+        footer .social-icons a{
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
             color: white;
             margin: 0 0.5rem;
             font-size: 1.5rem;
             transition: color 0.3s;
+            padding: 0.3rem;    
         }
 
-        footer .social-icons a:hover {
-            color: var(--accent-color);
+        .social-icons a svg{
+         stroke: white;
+         fill: none;
+         transition: stroke 0.3s ease;
+        }
+
+        .social-icons a:hover svg{
+            stroke: black;
+        }
+
+        footer .social-icons a:hover{
+            color: var(--dark-color);
         }
 
         @media (max-width: 768px) {
@@ -195,7 +203,7 @@
     <nav>
         <a href="index.html">Inicio</a>
         <a href="Blogs.html">Blog</a>
-        <a href="#">Sobre nosotros</a>
+        <a href="sobrenosotros.html">Sobre nosotros</a>
     </nav>
 
     <header id="inicio" data-aos="fade-down">
@@ -234,7 +242,7 @@
 
                     <p>
                     <h3>1. Impacto de la Basura en los Ecosistemas Xalapeños</h3>
-                    <p>a) Contaminación del Agua</p>
+                    <p><b>a) Contaminación del Agua</b></p>
                         <p class="parrafo">Los residuos arrojados en calles, barrancas y parques son arrastrados por la lluvia hacia
                             ríos y lagunas.
                         </p>
@@ -245,14 +253,14 @@
                             agua cada una.
                         </p>
 
-                    <p>b) Peligro para la Fauna</p>
-                        <p class="parrafo">Los animales confunden la basura con alimento.</p>
+                    <p><b>b) Peligro para la Fauna</b></p>
+                        <p>Los animales confunden la basura con alimento.</p>
                         <p class="parrafo">- Tortugas de río (Rhinoclemmys areolata) mueren al ingerir bolsas de plástico.</p>
                         <p class="parrafo">- Aves como el zanate (Quiscalus mexicanus) usan basura para hacer nidos, lastimando a sus
                         crías.</p>
                         <p class="parrafo">- Los envases de vidrio pueden causar incendios al concentrar los rayos del sol (como ha
                         ocurrido en el Cerro Macuiltépetl).</p>
-                    <p>c) Degradación del Suelo</p>
+                    <p><b>c) Degradación del Suelo</b></p>
                         <p class="parrafo">- Los plásticos y metales liberan sustancias tóxicas al descomponerse, afectando la
                         fertilidad de la tierra</p>
                         <p class="parrafo">- En el Parque Natura, se han detectado microplásticos en zonas donde crecen orquídeas
@@ -261,7 +269,7 @@
                     <p>
 
                     <h3>2. ¿Dónde se Genera Más Basura en Xalapa?</h3>
-                        <p class="parrafo">Según datos de SEDEMA, los puntos críticos son:</p>
+                        <p>Según datos de SEDEMA, los puntos críticos son:</p>
                         <p class="parrafo">- Parques turísticos (Macuiltépetl, Los Berros, Paseo de los Lagos).</p>
                         <p class="parrafo">- Barrancas y ríos urbanos (Sedeño, Carneros).</p>
                         <p class="parrafo">- Calles del Centro Histórico (por falta de botes de basura).</p>
@@ -270,7 +278,7 @@
 
                     <p>
                     <h3>3. ¿Qué Hacer con la Basura en los Parques?</h3>
-                    <p>a) Si hay contenedores:</p>
+                    <p><b>a) Si hay contenedores:</b></p>
                         <p class="parrafo">Separa correctamente:</p>
                         <p class="parrafo">- Verde (orgánicos): Cáscaras de fruta, restos de comida (para composta).</p>
                         <p class="parrafo">- Gris (inorgánicos): Plásticos, vidrio, latas (reciclables).</p>
@@ -278,7 +286,7 @@
                         <p class="parrafo">Ejemplo: El Parque Ecológico Macuiltépetl tiene estaciones de reciclaje para PET, aluminio y
                         pilas.</p>
 
-                    <p>b) Si NO hay botes de basura:</p>
+                    <p><b>b) Si NO hay botes de basura:</b></p>
                         <p class="parrafo">- Llévala contigo hasta encontrar un contenedor adecuado.</p>
                         <p class="parrafo">- Usa una bolsa reutilizable para guardar tus residuos temporalmente.</p>
                         <p class="parrafo">- Denuncia zonas sin recolección al 078 de SEDEMA o mediante la app Xalapa Recicla.</p>
@@ -494,13 +502,13 @@
                 <p>La observación respetuosa es la clave para coexistir con la biodiversidad xalapeña. Al visitar los
                     parques:</p>
 
-                <p class="parrafo">- Mantén distancia: Usa binoculares o cámaras con zoom para admirar aves como el pájaro
+                <p class="parrafo" >- Mantén distancia: Usa binoculares o cámaras con zoom para admirar aves como el pájaro
                     bandera o el clarín jilguero sin perturbarlas.</p>
 
                 <p class="parrafo">- No dejes residuos: La basura atrae fauna de manera artificial y contamina su hábitat. Un
                     envase plástico, por ejemplo, podría ser ingerido por un tlacuache, bloqueando su digestión.
                 <p class="parrafo">
-                    - Respeta los senderos: Evita adentrarte en áreas no señalizadas para no pisar nidos o
+                   - Respeta los senderos: Evita adentrarte en áreas no señalizadas para no pisar nidos o
                     madrigueras, especialmente durante temporadas de reproducción.
                 </p>
 
@@ -529,9 +537,9 @@
 
 
 
-        </div>
+    
 
-        <div class="Parque-1">
+        <div class="Parque">
             <img src="imagenes/Paseo-de-los-Lagos.jgp.jpg" alt="">
             <h3>No recoger plantas o flores</h3>
             <p>
@@ -557,16 +565,16 @@
 
             <p>
             <h3>El papel ecológico de la flora: Más allá de la belleza</h3>
-            <p>- Soporte para la biodiversidad: Un solo árbol en el Parque Natura puede albergar líquenes, musgos,
+            <p class="parrafo">- Soporte para la biodiversidad: Un solo árbol en el Parque Natura puede albergar líquenes, musgos,
                 epífitas y decenas de insectos. Las flores de izotes (Yucca guatemalensis), por ejemplo, son
                 cruciales para la polilla de la yuca (Tegeticula yuccasella), con la que tienen una relación
                 simbiótica: la polilla es su única polinizadora, y a cambio, sus larvas se alimentan de algunas
                 semillas.</p>
-            <p>- Regulación ambiental: Los bosques de niebla, como los del Cerro de Macuiltépetl, capturan agua de
+            <p class="parrafo">- Regulación ambiental: Los bosques de niebla, como los del Cerro de Macuiltépetl, capturan agua de
                 la
                 neblina y recargan mantos acuíferos. Musgos y helechos actúan como esponjas naturales, previniendo
                 erosión y deslaves en esta ciudad de pronunciadas pendientes.</p>
-            <p>- Alimento para la fauna: Frutos como los del capulín (Prunus serotina) nutren a aves migratorias,
+            <p class="parrafo">- Alimento para la fauna: Frutos como los del capulín (Prunus serotina) nutren a aves migratorias,
                 mientras las hojas de jonotes (Heliocarpus spp.) son alimento para larvas de mariposas endémicas,
                 como la Morpho peleides.</p>
             </p>
@@ -574,27 +582,35 @@
             <p>
             <h3>Consecuencias de la alteración humana</h3>
             Cortar flores, ramas o raíces tiene efectos en cascada:
-            <p>- Pérdida de hábitats: Al arrancar una bromelia, se destruye un ecosistema en miniatura que podría
+            <p class="parrafo">- Pérdida de hábitats: Al arrancar una bromelia, se destruye un ecosistema en miniatura que podría
                 albergar desde huevos de rana hasta arañas cazadoras.</p>
-            <p>- Interrupción de ciclos: Plantas como los helechos arborescentes (Cyathea spp.) tardan décadas en
+            <p class="parrafo">- Interrupción de ciclos: Plantas como los helechos arborescentes (Cyathea spp.) tardan décadas en
                 crecer. Su remoción afecta la humedad del suelo y la sombra que necesitan especies como los hongos
                 micorrícicos, esenciales para la salud del bosque.</p>
-            <p>- Invasión de especies: Espacios despejados por la extracción de plantas nativas son colonizados por
+            <p class="parrafo">- Invasión de especies: Espacios despejados por la extracción de plantas nativas son colonizados por
                 especies invasoras como el pasto kikuyo (Cenchrus clandestinus), que compite agresivamente por
                 recursos.</p>
             </p>
 
             <p>
             <h3>Turismo responsable: Alternativas para proteger la flora</h3>
-            <p>- Fotografía científica y artística: En lugar de recolectar plantas, documenta su belleza. Xalapa es
-                pionera en proyectos de ciencia ciudadana: plataformas como iNaturalist registran observaciones de
-                especies como la Tigridia pavonia ("flor de tigre"), ayudando a monitorear su distribución.</p>
-            <p>- Visitas guiadas con expertos: El Jardín Botánico Francisco Javier Clavijero ofrece recorridos para
-                identificar especies sin perturbarlas. Aprenderás, por ejemplo, que el aroma de la vainilla (Vanilla
-                planifolia) proviene de orquídeas que trepan por los árboles.</p>
-            <p>- Apoyo a viveros certificados: Si deseas llevar una planta a casa, adquiere ejemplares reproducidos
-                legalmente en viveros como los del Instituto de Ecología (INECOL), que promueven variedades nativas.
-            </p>
+            <p><b>Fotografía científica y artística:</b> </p>
+                <p class="parrafo">
+                    En lugar de recolectar plantas, documenta su belleza. Xalapa es
+                    pionera en proyectos de ciencia ciudadana: plataformas como iNaturalist registran observaciones de
+                    especies como la Tigridia pavonia ("flor de tigre"), ayudando a monitorear su distribución.
+                </p>
+            <p><b>Visitas guiadas con expertos:</b> </p>
+                <p class="parrafo">
+                    El Jardín Botánico Francisco Javier Clavijero ofrece recorridos para
+                    identificar especies sin perturbarlas. Aprenderás, por ejemplo, que el aroma de la vainilla (Vanilla
+                    planifolia) proviene de orquídeas que trepan por los árboles.
+                </p>
+            <p><b>Apoyo a viveros certificados:</b> </p>
+                <p class="parrafo">
+                    Si deseas llevar una planta a casa, adquiere ejemplares reproducidos
+                    legalmente en viveros como los del Instituto de Ecología (INECOL), que promueven variedades nativas.
+                </p>
 
             <p>
             <h3>Acciones comunitarias y legales</h3>
@@ -617,9 +633,8 @@
             </p>
         </div>
         </p>
-        </div>
 
-        <div class="Parque-1">
+        <div class="Parque">
             <img src="imagenes/Paseo-de-los-Lagos.jgp.jpg" alt="">
             <h3>Cuidar el agua</h3>
             <p>
@@ -630,37 +645,46 @@
 
             <p>
             <h3>Problemas actuales</h3>
-            <p>- Contaminación por residuos: En el Río Sedeño, afluente del Paseo de los Lagos, se han detectado
-                microplásticos y espumas tóxicas por detergentes.</p>
-            <p>- Pérdida de caudal: La deforestación en el Cerro del Estropajo (fuente del Río Carneros) reduce la
-                infiltración de agua al subsuelo.</p>
-            <p>- Especies afectadas: La salamandra Pseudoeurycea leprosa, endémica de los arroyos xalapeños, es
-                sensible a los metales pesados derivados de aguas residuales.</p>
+            <p><b>Contaminación por residuos:</b> </p>
+                <p class="parrafo">
+                    En el Río Sedeño, afluente del Paseo de los Lagos, se han detectado
+                    microplásticos y espumas tóxicas por detergentes.
+                </p>
+            <p><b>Pérdida de caudal:</b> </p>
+                <p class="parrafo">
+                    La deforestación en el Cerro del Estropajo (fuente del Río Carneros) reduce la
+                    infiltración de agua al subsuelo.
+                </p>
+            <p><b>Especies afectadas:</b></p>
+                <p class="parrafo">
+                    La salamandra Pseudoeurycea leprosa, endémica de los arroyos xalapeños, es
+                sensible a los metales pesados derivados de aguas residuales.
+                </p>
             </p>
 
             <p>
             <h3>Acciones para proteger el agua</h3>
-            Uso responsable en parques:
-            <p>- En la Laguna de Xalapa, evita alimentar patos con pan (daña su salud y eutrofiza el agua). Opta por
+            <p><b>Uso responsable en parques:</b></p>
+            <p class="parrafo">- En la Laguna de Xalapa, evita alimentar patos con pan (daña su salud y eutrofiza el agua). Opta por
                 semillas o vegetales.</p>
-            <p>- Denuncia vertidos ilegales (como aceites de autos) en los ríos urbanos al número de Protección
+            <p class="parrafo">- Denuncia vertidos ilegales (como aceites de autos) en los ríos urbanos al número de Protección
                 Ambiental local: 228 841-8500.</p>
             </p>
 
             <p>
             <h3>Soluciones comunitarias:</h3>
-            <p>- Cosecha de lluvia: Colectivos como Agua para Todos instalan sistemas en colonias como El Moral para
+            <p class="parrafo">- Cosecha de lluvia: Colectivos como Agua para Todos instalan sistemas en colonias como El Moral para
                 reducir la presión sobre los mantos acuíferos.</p>
-            <p>- Rehabilitación de humedales: El proyecto Xalapa Humedal recuperó parte del Río Tlalmecapan con
+            <p class="parrafo">- Rehabilitación de humedales: El proyecto Xalapa Humedal recuperó parte del Río Tlalmecapan con
                 plantas filtradoras como Typha domingensis ("tule").</p>
             </p>
 
             <p>
             <h3>Turismo consciente:</h3>
-            <p>- En balnearios naturales como Los Berros o El Haya, usa bloqueadores biodegradables para no alterar
+            <p class="parrafo">- En balnearios naturales como Los Berros o El Haya, usa bloqueadores biodegradables para no alterar
                 la
                 química del agua.</p>
-            <p>- Apoya negocios que traten sus aguas residuales, como el Café-Taller Aroma a Café, que usa filtros
+            <p class="parrafo">- Apoya negocios que traten sus aguas residuales, como el Café-Taller Aroma a Café, que usa filtros
                 de
                 carbón activado.</p>
 
@@ -673,9 +697,8 @@
             </p>
         </div>
         </p>
-        </div>
 
-        <div class="Parque-1">
+        <div class="Parque">
             <img src="imagenes/Paseo-de-los-Lagos.jgp.jpg" alt="">
             <h3>Reciclar</h3>
             <p>
@@ -687,58 +710,71 @@
 
             <p>
             <h3>¿Dónde y cómo reciclar en Xalapa?</h3>
-            <p>Puntos Verdes en Parques:</p>
-            <p>- Parque Los Berros: Cuenta con contenedores para separar PET, vidrio, aluminio y cartón.</p>
-            <p>- Parque Ecológico Macuiltépetl: Aquí se recolectan pilas y electrónicos en desuso para evitar
+            <p><b>Puntos Verdes en Parques:</b></p>
+            <p class="parrafo">- Parque Los Berros: Cuenta con contenedores para separar PET, vidrio, aluminio y cartón.</p>
+            <p class="parrafo">- Parque Ecológico Macuiltépetl: Aquí se recolectan pilas y electrónicos en desuso para evitar
                 contaminación por metales pesados.</p>
-            <p>- Paseo de los Lagos: Tiene módulos de EcoRAEE para reciclaje de electrodomésticos y cables.</p>
+            <p class="parrafo">- Paseo de los Lagos: Tiene módulos de EcoRAEE para reciclaje de electrodomésticos y cables.</p>
             </p>
 
             <p>
             <h3>Centros de Acopio Permanentes:</h3>
-            <p>- SEDEMA Xalapa: Recibe aceite vegetal usado (para convertirlo en biodiesel) en su centro de Calle
-                Clavijero #34.</p>
-            <p>- ECOBOX: Ubicado en Plaza Crystal, recolecta plásticos, tetrapack y hasta colillas de cigarro
-                (usadas
-                para compost).</p>
-            <p>- Vivero Forestal INECOL: Acepta residuos orgánicos para producir composta que nutre sus viveros de
-                plantas nativas.</p>
+            <p><b>SEDEMA Xalapa: </b></p>
+                <p class="parrafo">
+                    Recibe aceite vegetal usado (para convertirlo en biodiesel) en su centro de Calle
+                    Clavijero #34.
+                </p>
+            <p><b>ECOBOX:</b></p>
+                <p class="parrafo">
+                    Ubicado en Plaza Crystal, recolecta plásticos, tetrapack y hasta colillas de cigarro
+                    (usadas para compost).
+                </p>
+            <p><b>Vivero Forestal INECOL: </b></p>
+                <p class="parrafo">
+                    Acepta residuos orgánicos para producir composta que nutre sus viveros de
+                    plantas nativas.
+                </p>
             </p>
 
             <p>
             <h3>Programas Municipales:</h3>
-            <p>- "Recicla por tu Ciudad": Los miércoles, camiones recolectores separan residuos reciclables en
-                colonias como Centro y Ánimas.</p>
-            <p>- Mercados de Trueque: En el Tianquiztli Sustentable (primer domingo de mes), puedes intercambiar
-                residuos secos por productos locales como miel o hortalizas.</p>
+            <p><b>"Recicla por tu Ciudad":</b> </p>
+                <p class="parrafo">
+                    Los miércoles, camiones recolectores separan residuos reciclables en
+                    colonias como Centro y Ánimas.
+                </p>
+            <p><b>Mercados de Trueque:</b></p>
+                <p class="parrafo">
+                    En el Tianquiztli Sustentable (primer domingo de mes), puedes intercambiar
+                     residuos secos por productos locales como miel o hortalizas.
+                </p>
             </p>
 
             <p>
             <h3>¿Qué materiales sí y no reciclar?</h3>
-            <p>✅ Sí aceptados:</p>
-            <p>- PET (botellas transparentes, limpias y sin etiquetas).</p>
-            <p>- Vidrio (frascos enteros, no rotos).</p>
-            <p>- Aluminio (latas compactadas).</p>
-            <p>- Cartón (sin restos de comida o grasa).</p>
+            <p><b>✅ Sí aceptados:</b></p>
+            <p class="parrafo">- PET (botellas transparentes, limpias y sin etiquetas).</p>
+            <p class="parrafo">- Vidrio (frascos enteros, no rotos).</p>
+            <p class="parrafo">- Aluminio (latas compactadas).</p>
+            <p class="parrafo">- Cartón (sin restos de comida o grasa).</p>
             </p>
 
             <p>
-            <h3>❌ No aceptados:</h3>
-            <p>- Unicel (contamina el proceso; mejor evítalo).</p>
-            <p>- Pañales o toallas sanitarias (requieren tratamiento especial).</p>
-            <p>- Envases mixtos (como tetrapack con residuos líquidos).</p>
-            <p> -Tip: Lava los envases antes de reciclarlos para evitar malos olores y plagas.</p>
+            <p><b>❌ No aceptados:</b></p>
+            <p class="parrafo">- Unicel (contamina el proceso; mejor evítalo).</p>
+            <p class="parrafo">- Pañales o toallas sanitarias (requieren tratamiento especial).</p>
+            <p class="parrafo">- Envases mixtos (como tetrapack con residuos líquidos).</p>
+            <p class="parrafo"> -Tip: Lava los envases antes de reciclarlos para evitar malos olores y plagas.</p>
             </p>
 
             <p>
             <h3>¿Qué hacer si no hay contenedores cerca?</h3>
-            <p>- Espera hasta encontrar un contenedor de basura y si no lo hay, guardalo para tirarlo en tu casa</p>
+            <p>Espera hasta encontrar un contenedor de basura y si no lo hay, guardalo para tirarlo en tu casa</p>
             </p>
         </div>
         </p>
-        </div>
 
-        <div class="Parque-1">
+        <div class="Parque">
             <img src="imagenes/Paseo-de-los-Lagos.jgp.jpg" alt="">
             <h3>Uso responsable de recursos</h3>
             <p>
@@ -750,32 +786,38 @@
 
             <p>
             <h3>1. Agua: Un Recurso Limitado en una Ciudad Lluviosa</h3>
-            <p>- Aunque Xalapa tiene un clima húmedo y abundantes lluvias, la sobreexplotación de mantos acuíferos y
+            <p>Aunque Xalapa tiene un clima húmedo y abundantes lluvias, la sobreexplotación de mantos acuíferos y
                 la contaminación de ríos amenazan su disponibilidad.</p>
             <h3>Problemas actuales:</h3>
-            <p>- Pérdida de caudal: El Río Sedeño y el Río Carneros han reducido su flujo por deforestación y
-                extracción ilegal.</p>
-            <p>- Contaminación: Residuos químicos (detergentes, aceites) y basura en ríos como el Tlalmecapan
-                afectan
-                a especies como el ajolote xalapeño.</p>
-            <p>Fugas en la red pública: Se estima que 40% del agua potable se pierde por tuberías dañadas.</p>
+            <p> <b>Pérdida de caudal:</b></p>
+                <p class="parrafo">
+                    El Río Sedeño y el Río Carneros han reducido su flujo por deforestación y
+                    extracción ilegal.
+                </p>
+            <p><b>Contaminación:</b></p>
+                <p class="parrafo">
+                    Residuos químicos (detergentes, aceites) y basura en ríos como el Tlalmecapan
+                    afectan a especies como el ajolote xalapeño.
+                </p>
+            <p> <b>Fugas en la red pública:</b></p>
+                <p class="parrafo">
+                    Se estima que 40% del agua potable se pierde por tuberías dañadas.
+                </p>
             </p>
 
             <p>
             <h3>Acciones para un uso responsable:</h3>
-            <p>✅ En parques y áreas naturales:</p>
-            <p>- Cierra bien las llaves de fuentes públicas (ej: en Parque Los Berros).</p>
-            <p>- Denuncia fugas al Sistema de Agua Potable de Xalapa (SAPAX) al 228 841-8500.</p>
-            <p>- Evita lavar trastes o ropa en ríos o lagunas (como la Laguna de El Castillo).</p>
+            <p> <b>✅ En parques y áreas naturales:</b></p>
+            <p class="parrafo">- Cierra bien las llaves de fuentes públicas (ej: en Parque Los Berros).</p>
+            <p class="parrafo">- Denuncia fugas al Sistema de Agua Potable de Xalapa (SAPAX) al 228 841-8500.</p>
+            <p class="parrafo">- Evita lavar trastes o ropa en ríos o lagunas (como la Laguna de El Castillo).</p>
             </p>
 
-            <p>
-                ✅ En casa y comunidad:
-            </p>
-            <p>- Instala captadores de lluvia (proyectos como Agua para Todos ofrecen talleres).</p>
-            <p>- Usa plantas nativas (ej: helechos, bromelias) en jardines, que requieren menos riego.</p>
-            <p>- Participa en jornadas de limpieza de ríos con colectivos como Salvemos el Sedeño.</p>
-            <p>- Dato clave: El Cerro del Estropajo es una zona crítica de recarga hídrica. Su conservación es vital
+            <p><b> ✅ En casa y comunidad: </b></p>
+            <p class="parrafo">- Instala captadores de lluvia (proyectos como Agua para Todos ofrecen talleres).</p>
+            <p class="parrafo">- Usa plantas nativas (ej: helechos, bromelias) en jardines, que requieren menos riego.</p>
+            <p class="parrafo">- Participa en jornadas de limpieza de ríos con colectivos como Salvemos el Sedeño.</p>
+            <p class="parrafo">- Dato clave: El Cerro del Estropajo es una zona crítica de recarga hídrica. Su conservación es vital
                 para el abasto de agua en la ciudad.</p>
 
             <p>
@@ -787,57 +829,59 @@
             </p>
             <p>- Horarios de iluminación: Algunas áreas (como el Jardín Botánico Clavijero) apagan luces después de
                 cierta hora para ahorrar energía.</p>
-            <p>¿Cómo contribuir?</p>
-            <p>🔌 En casa:</p>
-            <p>- Usa focos LED y desconecta aparatos que no uses (el modo standby gasta energía).</p>
-            <p>- Seca la ropa al sol en lugar de usar secadora.</p>
-            <p>🌱 Alternativas comunitarias:</p>
-            <p>- Cooperativas de energía limpia: Algunas colonias (como Francisco Ferrer Guardia) implementan
+            <h3>¿Cómo contribuir?</h3>
+            <p> <b> En casa:</b></p>
+            <p class="parrafo">- Usa focos LED y desconecta aparatos que no uses (el modo standby gasta energía).</p>
+            <p class="parrafo">- Seca la ropa al sol en lugar de usar secadora.</p>
+            <p><b> 🌱 Alternativas comunitarias:</b></p>
+            <p class="parrafo">- Cooperativas de energía limpia: Algunas colonias (como Francisco Ferrer Guardia) implementan
                 paneles solares comunitarios.</p>
-            <p>- Movilidad sostenible: Usa la ciclovía Xalapa-Coatepec o el transporte eléctrico (próximamente en
+            <p class="parrafo">- Movilidad sostenible: Usa la ciclovía Xalapa-Coatepec o el transporte eléctrico (próximamente en
                 Tuzobús).</p>
-            <p>Impacto: Si el 10% de los hogares xalapeños usara energía solar, se evitarían 1,200 toneladas de CO₂
-                al año.</p>
-            </p>
+            <p><b>Impacto: </b></p>
+                <p class="parrafo">- Si el 10% de los hogares xalapeños usara energía solar, se evitarían 1,200 toneladas de CO₂
+                    al año.</p>
+                </p>
 
             <p>
             <h3>3. Residuos Sólidos: Más Allá del Reciclaje</h3>
             <p>Xalapa genera ~1,200 toneladas de basura diarias, pero solo el 12% se recicla.</p>
-            <p>Uso responsable en parques:</p>
-            <p>🗑️ Basura cero:</p>
-            <p>- Lleva tus propios recipientes reutilizables (evita unicel y plásticos de un solo uso).</p>
-            <p>- Si no hay botes de basura, llévate tus residuos (ej: en el Cerro Macuiltépetl).</p>
-            <p>♻️ Separa correctamente:</p>
-            <p>- Verde (orgánicos): Restos de comida, cáscaras (usados en composta del Vivero INECOL).</p>
-            <p>- Gris (inorgánicos): Plásticos, vidrio, latas (llevarlos a ECOBOX o Recicla por tu Ciudad).</p>
+            <p><b>Uso responsable en parques:</b></p>
+            <p><b>🗑️ Basura cero:</b></p>
+            <p class="parrafo">- Lleva tus propios recipientes reutilizables (evita unicel y plásticos de un solo uso).</p>
+            <p class="parrafo">- Si no hay botes de basura, llévate tus residuos (ej: en el Cerro Macuiltépetl).</p>
+            <p><b>♻️ Separa correctamente:</b></p>
+            <p class="parrafo">- Verde (orgánicos): Restos de comida, cáscaras (usados en composta del Vivero INECOL).</p>
+            <p class="parrafo">- Gris (inorgánicos): Plásticos, vidrio, latas (llevarlos a ECOBOX o Recicla por tu Ciudad).</p>
             </p>
 
             <p>
             <h3>4. Áreas Comunes: Compartir con Conciencia</h3>
             <p>Los parques son de todos, y su cuidado depende de cada visitante.</p>
-            <p>En zonas de picnic y descanso:</p>
-            <p>- No rayes árboles o bancas (el musgo y líquenes en troncos son hábitats de insectos).</p>
-            <p>- Usa parrillas solo en áreas permitidas (como en Parque Ecológico El Haya).</p>
-            <p>- Lleva bolsas para tu basura: Evita que el viento la esparza (es peligroso para aves como el colibrí
+            <p><b>En zonas de picnic y descanso:</b></p>
+            <p class="parrafo">- No rayes árboles o bancas (el musgo y líquenes en troncos son hábitats de insectos).</p>
+            <p class="parrafo">- Usa parrillas solo en áreas permitidas (como en Parque Ecológico El Haya).</p>
+            <p class="parrafo">- Lleva bolsas para tu basura: Evita que el viento la esparza (es peligroso para aves como el colibrí
                 berilo).</p>
-            <p>En senderos:</p>
-            <p>- Camina por rutas marcadas: Pisar fuera del camino erosiona el suelo y daña raíces de plantas como
+            <p><b>En senderos:</b></p>
+            <p class="parrafo">- Camina por rutas marcadas: Pisar fuera del camino erosiona el suelo y daña raíces de plantas como
                 orquídeas silvestres.</p>
-            <p>-Evita ruido excesivo: Alteras a fauna como el tejón (Nasua narica) y aves migratorias.</p>
+            <p class="parrafo">-Evita ruido excesivo: Alteras a fauna como el tejón (Nasua narica) y aves migratorias.</p>
             </p>
 
             <p>
             <h3>5. Educación y Participación Ciudadana</h3>
-            <p>Proyectos destacados:</p>
-            <p>- Red de Huertos Urbanos: Talleres para cultivar alimentos en casa (contacto: Huertos Xalapa).</p>
-            <p>- ine ambiental gratuito: En el Jardín de las Esculturas (temas como reforestación y captación de
+            <p><b>Proyectos destacados:</b></p>
+            <p class="parrafo">- Red de Huertos Urbanos: Talleres para cultivar alimentos en casa (contacto: Huertos Xalapa).</p>
+            <p class="parrafo">- ine ambiental gratuito: En el Jardín de las Esculturas (temas como reforestación y captación de
                 agua).</p>
-            <p>- Voluntariado en reservas: Como el Santuario del Bosque de Niebla (restauración de suelo y monitoreo
+            <p class="parrafo">- Voluntariado en reservas: Como el Santuario del Bosque de Niebla (restauración de suelo y monitoreo
                 de flora).</p>
-            <p>Frases para recordar:</p>
+            <p><b>Frases para recordar:</b></p>
             <p>"En Xalapa, el agua no se gota, se cuida" (Campaña SAPAX).</p>
             <p> "Un parque limpio es reflejo de una sociedad educada" (Colectivo Macuiltépetl).</p>
             </p>
+        </div>
         </div>
         </div>
         </div>
@@ -873,15 +917,15 @@
 
 </html>
 
-    <footer id="contacto" data-aos="fade-up">
-        <p>Contáctanos: conservacion@xalapa.mx</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-        <p>&copy; 2025 Conservación de Parques Xalapa</p>
-    </footer>
+<footer>
+    <p>Contáctanos en nuestras redes sociales:  </p>
+    <div class="iconos-redes">
+        <a href="https://x.com/xalapa_verde?s=21"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg></a>
+        <a href="https://www.instagram.com/xalapa_verde?igsh=MXM0dGZ1ZDVzanFtZQ%3D%3D&utm_source=qr"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="#ffffff"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-8a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-4 5a4 4 0 0 0 -3.995 3.8l-.005 .2a4 4 0 1 0 4 -4m4.5 -1.5a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" /></svg></a>
+        <a href="https://www.facebook.com/share/1CjNWLBJDK/?mibextid=wwXIfr"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg></a>
+    </div>
+    <p>&copy 2025 Xalapa Verde - Todos los derechos reservados.</p>
+</footer>
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
@@ -890,8 +934,6 @@
             once: true
         });
     </script>
-
-    <script src="transicion.js"></script>
 </body>
 
  
