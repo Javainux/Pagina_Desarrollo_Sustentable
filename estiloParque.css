@@ -174,13 +174,12 @@ header h1 {
     object-fit: contain;
 }
 
-/* Videos */
+/* VIDEO */
 .video {
-    width: 55%;         /* El video se adapta al 100% del contenedor */
-    height: 30%;      /* La altura se ajusta automáticamente */
-    aspect-ratio: 16 / 9; /* Mantiene la proporción 16:9 */
-    margin: 0 auto;
-    border-radius: 2.5%;
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 .Parrafo-uno{
@@ -277,21 +276,64 @@ footer .social-icons a:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
-    #Navegacion ul, #Navegacion2 ul {
-        flex-direction: column;
-        gap: 0.5rem;
+    nav ul {
+        flex-direction: row;
+        align-items: center;
     }
 
-    .galeria {
-        grid-template-columns: 1fr;
+    nav li {
+        margin: 0.5rem 0;
+    }
+
+    .galeria img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 200px;
+    width: 200px;
+    }
+
+    .ultima_foto{
+        height: 300px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        overflow-x: auto; /* Permite desplazamiento si hay muchos elementos */
+        white-space: nowrap; /* Evita que los elementos se acomoden en varias líneas */
+        padding: 0.5rem 0;
+        justify-content: start;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row; /* Mantiene la estructura horizontal */
+        gap: 1rem; /* Espaciado entre elementos */
+        flex-wrap: nowrap; /* Evita que los elementos se apilen */
+        width: max-content; /* Se ajusta al contenido para mantenerlo en línea */
+    }
+
+    nav li {
+        flex: 0 0 auto;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.5rem;
+        text-align: center;
     }
 
     .video {
-        width: 100%;
-        height: auto;
+        display: block;
+        margin: 2rem auto;
+        max-width: 80%;
+        border-radius: 10px;
     }
 
-    .contenedoor {
-        padding: 1rem;
-    }
+
+    
+
+
 }

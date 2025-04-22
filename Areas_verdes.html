@@ -27,28 +27,47 @@
             color: var(--text-color);
         }
 
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: rgba(27, 94, 32, 0.9);
-            display: flex;
-            justify-content: center;
-            padding: 1rem;
-            z-index: 1000;
-        }
+         /* NAV PRINCIPAL Y SECUNDARIA */
+nav {
+    width: 100%;
+    background-color: rgba(27, 94, 32, 0.9);
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    z-index: 1000;
+}
 
-        nav a {
-            color: white;
-            margin: 0 1rem;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
+#Navegacion {
+  margin-top: 20px;
+    position: fixed;
+    top: 0;
+    position:sticky;
+}
 
-        nav a:hover {
-            color: var(--accent-color);
-        }
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
 
         header {
             text-align: center;
@@ -183,19 +202,59 @@
             color: var(--dark-color);
         }
 
-        @media (max-width: 768px) {
-            .features {
-                flex-direction: column;
-            }
+        /* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        align-items:center;
+    }
 
-            nav {
-                flex-direction: column;
-            }
+    nav li {
+        margin: 0.5rem 0;
+    }
 
-            nav a {
-                margin: 0.5rem 0;
-            }
-        }
+    .mosaico img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 200px;
+    width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    
+
+    nav ul {
+        display: flex;
+        flex-direction: row; /* Mantiene la estructura horizontal */
+        gap: 1rem; /* Espaciado entre elementos */
+        flex-wrap: nowrap; /* Evita que los elementos se apilen */
+        width: max-content; /* Se ajusta al contenido para mantenerlo en línea */
+    }
+
+    nav li {
+        flex: 0 0 auto;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .video {
+        display: block;
+        margin: 2rem auto;
+        max-width: 80%;
+        border-radius: 10px;
+    }
+
+
+}
+
+        
+
+
     </style>
 </head>
 

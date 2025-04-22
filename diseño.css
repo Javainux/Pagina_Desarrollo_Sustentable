@@ -190,15 +190,15 @@ footer .social-icons a{
     padding: 0.3rem;
 }
 
-.iconos-redes a svg{
-    stroke: white;
-    fill: none;
-    transition: stroke 0.3s ease;
-   }
+ .iconos-redes a svg{
+         stroke: white;
+         fill: none;
+         transition: stroke 0.3s ease;
+        }
 
-   .iconos-redes a:hover svg {
-     stroke: black;
-   }
+        .iconos-redes a:hover svg {
+          stroke: black;
+        }
 
 
 footer .social-icons a:hover{
