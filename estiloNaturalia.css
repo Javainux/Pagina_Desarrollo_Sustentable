@@ -29,6 +29,10 @@ body {
     opacity: 0;
   }
 
+  body{
+    text-align: center;
+  }
+
 #Navegacion {
     position: fixed;
     top: 0;
@@ -332,8 +336,9 @@ footer {
     .mosaico img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
     }
 }
 
