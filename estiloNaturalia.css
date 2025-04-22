@@ -332,8 +332,8 @@ footer {
     .mosaico img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     }
 }
 
